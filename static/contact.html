@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Thank You</title>
+    <script>
+        // Redirect back to the main page with a success parameter
+        window.onload = function() {
+            const url = new URL(window.location.href);
+            const referrer = url.searchParams.get('_path') || '/';
+            window.location.href = `${referrer}?success=true#contact`;
+        };
+    </script>
+</head>
+<body>
+    <p>Thank you for your message! Redirecting you back...</p>
+</body>
+</html>

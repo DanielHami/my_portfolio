@@ -1,0 +1,737 @@
+<div class="aura-background-component top-0 w-full -z-10 absolute h-[815px]"><div data-us-project="cqcLtDwfoHqqRPttBbQE" class="absolute top-0 left-0 -z-10 w-full h-full"></div>
+<script type="text/javascript">
+  !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
+</script></div>
+    <!-- Header -->
+    <div style="position: relative; z-index: 100;">
+    <header class="max-w-7xl mx-auto px-4 sm:px-6 pt-6 relative">
+      <nav class="flex items-center justify-between border-b border-white/10 pb-4">
+        <!-- Brand -->
+        <a href="#" class="inline-flex items-center gap-2">
+          <svg class="md:w-14 md:h-14 w-[36px] h-[36px]" viewBox="0 0 48 48" aria-hidden="true" stroke-width="2" style="width: 36px; height: 36px;">
+            <path d="M24 8 L40 36 H8 Z" fill="currentColor"></path>
+          </svg>
+          <span class="sm:text-base text-sm font-medium tracking-tight">Daniel Hami</span>
+        </a>
+
+        <!-- Nav links -->
+        <div class="hidden md:flex items-center gap-6">
+          <a href="#work" class="text-sm text-white/70 hover:text-white tracking-tight">Munkáim</a>
+          <a href="#stack" class="text-sm text-white/70 hover:text-white tracking-tight">Technológiák</a>
+          <a href="#evals" class="text-sm text-white/70 hover:text-white tracking-tight">Eredmények</a>
+          <a href="#about" class="text-sm text-white/70 hover:text-white tracking-tight">Rólam</a>
+          <a href="#contact" class="text-sm text-white/70 hover:text-white tracking-tight">Kapcsolat</a>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-2">
+          <a href="/resume/DanielHamiResumeHUN.pdf" download class="hidden sm:inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-sm font-medium tracking-tight text-white bg-white/10 hover:bg-white/15 border border-white/10 shadow-sm">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" class="lucide lucide-download w-4 h-4"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+            <span>Önéletrajz</span>
+          </a>
+          <div class="relative">
+            <div id="lang-switcher" class="relative">
+              <button
+                id="lang-trigger"
+                type="button"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                class="flex items-center gap-2 rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 text-sm font-medium text-neutral-200 shadow hover:bg-neutral-800 focus:outline-none"
+              >
+                <i data-lucide="globe" stroke-width="1.5" class="h-4 w-4 opacity-90"></i>
+                <span id="lang-label">HU</span>
+                <i data-lucide="chevron-down" stroke-width="1.5" class="h-4 w-4 opacity-70"></i>
+              </button>
+              <div
+                id="lang-dropdown"
+                class="hidden absolute right-0 z-[1000] mt-2 w-40 rounded-lg border border-neutral-800 bg-neutral-950 shadow-lg"
+                role="menu"
+                tabindex="-1"
+                style="position: absolute;"
+              >
+                <ul id="lang-list" class="p-2">
+                  <!-- Language options injected by JS -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <button type="button" data-menu-toggle="" class="md:hidden inline-flex items-center justify-center rounded-full p-2 border border-white/10 bg-white/5 hover:bg-white/10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="menu" class="lucide lucide-menu w-4 h-4"><path d="M4 12h16"></path><path d="M4 18h16"></path><path d="M4 6h16"></path></svg>
+            <span class="sr-only">Open menu</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile menu -->
+      <div data-menu-panel="" class="md:hidden hidden mt-3 rounded-2xl border border-white/10 bg-white/5 shadow-sm overflow-hidden">
+        <div class="px-4 py-3 grid gap-2">
+          <a href="#work" class="text-sm text-white/90 tracking-tight py-1.5">Munkáim</a>
+          <a href="#stack" class="text-sm text-white/90 tracking-tight py-1.5">Technológiák</a>
+          <a href="#evals" class="text-sm text-white/90 tracking-tight py-1.5">Eredmények</a>
+          <a href="#about" class="text-sm text-white/90 tracking-tight py-1.5">Rólam</a>
+          <a href="#contact" class="text-sm text-white/90 tracking-tight py-1.5">Kapcsolat</a>
+        </div>
+        <div class="border-t border-white/10 px-4 py-3">
+          <a href="/resume/DanielHamiResumeHUN.pdf" download class="inline-flex w-full items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium tracking-tight text-neutral-900 bg-white hover:bg-white/90 border border-white/10 transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" class="lucide lucide-download w-4 h-4"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+            <span>Önéletrajz</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    </div>
+    
+    <!-- Hero -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 mt-10 sm:mt-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7">
+          <h1 class="leading-none text-white tracking-tight">
+            <span class="block text-[12vw] sm:text-[10vw] md:text-[8vw] lg:text-[7vw] font-semibold">
+              <span data-letter="" style="display: inline-block; transform: translateY(0px); opacity: 1;" class="tracking-tighter">Daniel</span>
+              <span class="block"></span>
+              <span data-letter="" style="display: inline-block; transform: translateY(0px); opacity: 1;" class="tracking-tighter">Hami</span>
+            </span>
+          </h1>
+          <p class="sm:mt-5 sm:text-3xl leading-relaxed max-w-2xl text-base text-white/70 tracking-tight mt-4">
+             RPA &amp; AI‑ügynök fejlesztő — intelligens automatizálási rendszerek és fejlesztőközpontú megoldások tervezése. Üzleti szemléletet egyesítek a rendszermérnökséggel, hogy hatékony, skálázható és megbízható, AI‑vezérelt munkafolyamatokat hozzak létre.﻿
+          </p>
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <a href="#work" class="inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-medium tracking-tight text-neutral-900 bg-white hover:bg-white/90 border border-white/10">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-right" class="lucide lucide-arrow-right w-4 h-4"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              <span>Munkáim</span>
+            </a>
+            <a href="mailto:danihami44@gmail.com" class="inline-flex items-center justify-center gap-2 hover:bg-white/15 text-sm font-medium text-white tracking-tight bg-white/10 border-white/10 border rounded-full pt-3 pr-5 pb-3 pl-5 shadow-sm backdrop-blur">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail w-4 h-4"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+              <span class="">danihami44@gmail.com</span>
+            </a>
+          </div>
+
+          <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="flex items-start gap-3 border-t border-white/10 pt-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" class="lucide lucide-map-pin w-[18px] h-[18px] text-white/50 mt-0.5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div>
+                <p class="text-sm font-medium tracking-tight">Budapest, Magyarország</p>
+                <p class="text-xs text-white/60 mt-0.5">Távoli munkára nyitott vagyok</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 border-t border-white/10 pt-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="cpu" class="lucide lucide-cpu w-[18px] h-[18px] text-white/50 mt-0.5"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg>
+              <div>
+                <p class="text-sm font-medium tracking-tight">MI Rendszerek + RPA</p>
+                <p class="text-xs text-white/60 mt-0.5">RAG, ügynökök, teljesítménytesztek</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 border-t border-white/10 pt-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="check" class="lucide lucide-check w-[18px] h-[18px] text-white/50 mt-0.5"><path d="M20 6 9 17l-5-5"></path></svg>
+              <div>
+                <p class="text-sm font-medium tracking-tight">Elérhető vagyok</p>
+                <p class="text-xs text-white/60 mt-0.5">Kezdés 1 hónapon belül</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5">
+          <div class="relative aspect-[4/5] sm:aspect-[5/6] overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.35)] bg-white/5 rounded-3xl border border-white/10">
+            <img src="/src/img/danigray.jpg" alt="Daniel at work" class="absolute inset-0 w-full h-full object-cover" style="filter: grayscale(100%) saturate(0.7) contrast(1.1);">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+
+            <div class="absolute bottom-4 left-4 right-4 grid grid-cols-3 gap-3">
+              <div class="rounded-xl bg-white/10 backdrop-blur-md border border-white/15 p-3 shadow-lg">
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-2 h-2 rounded-full bg-white/50"></div>
+                  <div class="text-lg font-semibold tracking-tight text-white">82%</div>
+                </div>
+                <p class="text-[11px] text-white/70">automatizálás sikeresség</p>
+              </div>
+              <div class="rounded-xl bg-white/10 backdrop-blur-md border border-white/15 p-3 shadow-lg">
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-2 h-2 rounded-full bg-white/50"></div>
+                  <div class="text-lg font-semibold tracking-tight text-white">780ms</div>
+                </div>
+                <p class="text-[11px] text-white/70">robot válaszidő</p>
+              </div>
+              <div class="rounded-xl bg-white/10 backdrop-blur-md border border-white/15 p-3 shadow-lg">
+                <div class="flex items-center gap-2 mb-1">
+                  <div class="w-2 h-2 rounded-full bg-white/50"></div>
+                  <div class="text-lg font-semibold tracking-tight text-white">1.2k</div>
+                </div>
+                <p class="text-[11px] text-white/70">tesztek</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="max-w-7xl sm:px-6 sm:mt-20 border-white/10 border-t mt-16 mr-auto ml-auto pt-10 pr-4 pl-4">
+  <div class="flex items-center justify-between">
+    <h2 class="text-xl sm:text-2xl tracking-tight">Legutóbbi munkáim</h2>
+    <a href="#" class="inline-flex items-center gap-2 text-sm tracking-tight text-white/70 hover:text-white">
+      <span class="">Összes megtekintése</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-up-right" class="lucide lucide-arrow-up-right w-4 h-4"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+    </a>
+  </div>
+
+  <div class="mt-6 columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
+    <!-- Item 1 - Tall -->
+    <article class="group break-inside-avoid mb-5 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+      <div class="relative aspect-[16/9]">
+        <img src="/src/img/1.jpg" alt="RAG dashboard" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+      </div>
+      <div class="p-4 border-t border-white/10">
+        <div class="flex items-center gap-2 text-xs text-white/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="bot" class="lucide lucide-bot w-4 h-4"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg>
+          <span class="">RPA</span>
+        </div>
+        <h3 class="mt-2 text-base font-semibold tracking-tight">RPA munkafolyamat jelentésgenerálás</h3>
+        <p class="text-sm text-white/70 mt-1">Hibrid keresés, adatfeldarabolás, sémakönyvtár-alapú újrarangsorolás, megfigyelhetőség.</p>
+      </div>
+    </article>
+
+    <!-- Item 2 - Medium -->
+    <article class="group break-inside-avoid mb-5 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+      <div class="relative aspect-[4/3]">
+        <img src="/src/img/4.jpg" alt="Agentic workflow" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+      </div>
+      <div class="p-4 border-t border-white/10">
+        <div class="flex items-center gap-2 text-xs text-white/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="workflow" class="lucide lucide-workflow w-4 h-4"><rect width="8" height="8" x="3" y="3" rx="2"></rect><path d="M7 11v4a2 2 0 0 0 2 2h4"></path><rect width="8" height="8" x="13" y="13" rx="2"></rect></svg>
+          <span>RPA</span>
+        </div>
+        <h3 class="mt-2 text-base font-semibold tracking-tight">Automatizált jelszókezelés TOPdesk-ben</h3>
+        <p class="text-sm text-white/70 mt-1">Többeszközes tervezés, újrapróbálkozások, biztonsági korlátok, nyomkövetés OpenTelemetry-vel.</p>
+      </div>
+    </article>
+
+    <!-- Item 3 - Short -->
+    <article class="group break-inside-avoid mb-5 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+      <div class="relative aspect-[4/3]">
+        <img src="/src/img/2.jpg" alt="Code copilot" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" style="">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+      </div>
+      <div class="p-4 border-t border-white/10">
+        <div class="flex items-center gap-2 text-xs text-white/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="code-2" class="lucide lucide-code-2 w-4 h-4"><path d="m18 16 4-4-4-4"></path><path d="m6 8-4 4 4 4"></path><path d="m14.5 4-5 16"></path></svg>
+          <span class="">RPA</span>
+        </div>
+        <h3 class="mt-2 text-base font-semibold tracking-tight">SAP igénylés rögzítés automatizálása</h3>
+        <p class="text-sm text-white/70 mt-1">Beágyazott javaslatok, kontextus ablakok, értékelések és késleltetési keretek.</p>
+      </div>
+    </article>
+
+    <!-- Item 4 - Medium Tall -->
+    <article class="group break-inside-avoid mb-5 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+      <div class="relative aspect-[16/9]">
+        <img src="/src/img/5.jpg" alt="Data pipeline" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+      </div>
+      <div class="p-4 border-t border-white/10">
+        <div class="flex items-center gap-2 text-xs text-white/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="database" class="lucide lucide-database w-4 h-4"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg>
+          <span>RPA</span>
+        </div>
+        <h3 class="mt-2 text-base font-semibold tracking-tight">Egyedi SAP számlázási automatizálás</h3>
+        <p class="text-sm text-white/70 mt-1">Adatfolyam feldolgozás Apache Kafka-val és valós idejű irányítópultok.</p>
+      </div>
+    </article>
+
+    <!-- Item 5 - Square -->
+    <article class="group break-inside-avoid mb-5 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+      <div class="relative aspect-[16/9]">
+        <img src="/src/img/3.jpg" alt="ML model" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+      </div>
+      <div class="p-4 border-t border-white/10">
+        <div class="flex items-center gap-2 text-xs text-white/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="brain" class="lucide lucide-brain w-4 h-4"><path d="M12 18V5"></path><path d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"></path><path d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"></path><path d="M17.997 5.125a4 4 0 0 1 2.526 5.77"></path><path d="M18 18a4 4 0 0 0 2-7.464"></path><path d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"></path><path d="M6 18a4 4 0 0 1-2-7.464"></path><path d="M6.003 5.125a4 4 0 0 0-2.526 5.77"></path></svg>
+          <span class="">Agents</span>
+        </div>
+        <h3 class="mt-2 text-base font-semibold tracking-tight">Bejövő e-mail elemzési ügynök</h3>
+        <p class="text-sm text-white/70 mt-1">Finomhangolt transzformátorok domain-specifikus feladatokhoz egyéni adatkészletekkel.</p>
+      </div>
+    </article>
+
+    <!-- Item 6 - Medium -->
+    <article class="group break-inside-avoid mb-5 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03]">
+      <div class="relative aspect-[4/3]">
+        <img src="/src/img/6.jpg" alt="API system" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" style="">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+      </div>
+      <div class="p-4 border-t border-white/10">
+        <div class="flex items-center gap-2 text-xs text-white/60">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="server" class="lucide lucide-server w-4 h-4"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"></rect><rect width="20" height="8" x="2" y="14" rx="2" ry="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg>
+          <span>Agents</span>
+        </div>
+        <h3 class="mt-2 text-base font-semibold tracking-tight">AI-alapú ingyenes termék kiválasztás</h3>
+        <p class="text-sm text-white/70 mt-1">Mikroszolgáltatás-architektúra GraphQL-lel, Redis-gyorsítótárolással és automatikus skálázással.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+    <!-- Logos / Social proof (compact, dark) -->
+    <section class="max-w-7xl sm:px-6 sm:mt-16 mt-12 mr-auto ml-auto pr-4 pl-4">
+      <div class="relative overflow-hidden sm:p-8 text-white text-center bg-neutral-950 border-white/10 border rounded-3xl pt-6 pr-6 pb-6 pl-6">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute inset-0 bg-[radial-gradient(1200px_600px_at_20%_-20%,rgba(255,255,255,0.06),transparent_60%)]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(1200px_600px_at_80%_120%,rgba(255,255,255,0.05),transparent_60%)]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(#ffffff0d_1px,transparent_1px)] [background-size:20px_20px] opacity-[0.12]"></div>
+        </div>
+        <div class="relative">
+          <h2 class="text-2xl sm:text-3xl tracking-tight">Az automatizáció és az AI innovációjának motorja﻿</h2>
+          <p class="text-white/70 mt-2">A munkafolyamat‑automatizálás, az intelligens dokumentumfeldolgozás és az ügynökalapú üzleti működés fejlesztésére összpontosítok, innovatív és skálázható technológiákkal</p>
+          <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-7 gap-4 mt-8 mb-8 items-center">
+              <div class="flex gap-3 hover:text-white transition-colors duration-300 text-zinc-400 items-center justify-center">
+                  
+                  <span class="text-lg font-normal tracking-tighter">Automatizálás</span>
+              </div>
+              
+              <div class="flex gap-3 hover:text-white transition-colors duration-300 text-zinc-400 items-center justify-center">
+                  
+                  <span class="text-lg font-bold tracking-tighter font-bricolage">Kinyerés</span>
+              </div>
+              
+              <div class="flex gap-3 hover:text-white transition-colors duration-300 text-zinc-400 items-center justify-center">
+                  
+                  <span class="text-lg font-semibold tracking-tighter font-merriweather">Intelligencia</span>
+              </div>
+              
+              <div class="flex gap-3 hover:text-white transition-colors duration-300 text-zinc-400 items-center justify-center">
+                  
+                  <span class="text-lg font-normal tracking-tighter font-instrument-serif">Ügynökök</span>
+              </div>
+              
+              <div class="flex gap-3 hover:text-white transition-colors duration-300 text-zinc-400 items-center justify-center">
+                  
+                  <span class="text-lg font-semibold tracking-tighter font-playfair">Optimalizálás﻿</span>
+              </div>
+              
+              <div class="flex gap-3 hover:text-white transition-colors duration-300 text-zinc-400 items-center justify-center">
+                  
+                  <span class="text-lg font-normal tracking-tighter">Hatékonyság</span>
+              </div>
+              
+              <div class="flex gap-3 hover:text-white transition-colors duration-300 text-zinc-400 items-center justify-center">
+                  
+                  <span class="text-lg font-bold tracking-tighter">Elemzések﻿</span>
+              </div>
+          </div>
+        </div>
+    </div></section>
+        
+      
+    
+
+    <!-- Stack + Code + Timeline -->
+    <section id="stack" class="max-w-7xl sm:px-6 sm:mt-20 border-t border-white/10 mt-16 mx-auto pt-10 px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Skills -->
+        <div class="bg-white/5 border-white/10 border rounded-2xl pt-4 pr-4 pb-4 pl-4">
+  <div class="flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" class="lucide lucide-sparkles w-4 h-4 text-white/80"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+    <h3 class="text-xl font-semibold tracking-tight">Technológiák</h3>
+  </div>
+  
+  <div class="mt-3 space-y-4">
+    <div>
+      <h4 class="text-sm font-medium text-white/80 mb-2">RPA &amp; Automatizálás</h4>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">UiPath</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">Power Automate</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">VBA for process automation</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">OCR</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">Automation Anywhere</span>
+      </div>
+    </div>
+
+    <div class="">
+      <h4 class="text-sm font-medium text-white/80 mb-2">AI &amp; Backend</h4>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">Python 3.11+</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">FastAPI</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">LangChain</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">OpenAI API</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">Claude API</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">vLLM</span>
+        <span class="px-2.5 py-1 text-xs rounded-md bg-white/10 border border-white/10">Ollama</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-4 p-3 bg-black/30 rounded-lg border border-white/10">
+    <p class="text-xs text-white/70 leading-relaxed">
+      <span class="font-medium text-white/80">Fókuszterületek:</span> Végponttól végpontig tartó folyamatautomatizálás, AI-val integrált RPA munkafolyamatok fejlesztése és üzembe helyezése (dokumentumértés, osztályozás és autonóm ügynökök), vállalati automatizálás optimalizálása, üzemkész automatizálási folyamatok és kis késleltetésű MI megoldások.
+    </p>
+  </div>
+</div>
+
+        <!-- Code Snippet -->
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="terminal" class="lucide lucide-terminal w-4 h-4 text-white/80"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg>
+              <h3 class="text-xl font-semibold tracking-tight">RAG Pipeline</h3>
+            </div>
+            <span class="text-[11px] text-white/60">~42 lines</span>
+          </div>
+          <pre class="text-[12px] leading-relaxed overflow-auto text-white/90 bg-black/40 border-white/10 border rounded-xl mt-3 pt-3 pr-3 pb-3 pl-3" style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas;"><span style="color: #ff7b72;">from</span> <span style="color: #79c0ff;">fastapi</span> <span style="color: #ff7b72;" class="">import</span> <span style="color: #79c0ff;">FastAPI</span>
+            <span style="color: #ff7b72;">from</span> <span style="color: #79c0ff;" class="">rag</span> <span style="color: #ff7b72;">import</span> <span style="color: #79c0ff;">embed</span>, <span style="color: #79c0ff;" class="">search</span>, <span style="color: #79c0ff;">rerank</span>, <span style="color: #79c0ff;">answer</span>
+            <span style="color: #ff7b72;">from</span> <span style="color: #79c0ff;">tracers</span> <span style="color: #ff7b72;" class="">import</span> <span style="color: #79c0ff;" class="">trace</span>
+            <span style="color: #ffa657;">app</span> = <span style="color: #79c0ff;">FastAPI</span>()
+            <span style="color: #a5a5a5;">@</span><span style="color: #ffa657;" class="">app</span>.<span style="color: #d2a8ff;" class="">post</span>(<span style="color: #a5d6ff;" class="">"/ask"</span>)
+            <span style="color: #a5a5a5;">@</span><span style="color: #d2a8ff;">trace</span>(<span style="color: #a5d6ff;">"ask"</span>)
+            <span style="color: #ff7b72;">def</span> <span style="color: #d2a8ff;">ask</span>(<span style="color: #ffa657;">q</span>: <span style="color: #ff7b72;">str</span>, <span style="color: #ffa657;">user_id</span>: <span style="color: #ff7b72;">str</span>):
+            <span style="color: #ffa657;" class="">q_vec</span> = <span style="color: #d2a8ff;" class="">embed</span>(<span style="color: #ffa657;" class="">q</span>)
+            <span style="color: #ffa657;" class="">ranked</span> = <span style="color: #d2a8ff;" class="">rerank</span>(<span style="color: #ffa657;" class="">q</span>, <span style="color: #ffa657;" class="">chunks</span>)[:<span style="color: #a5d6ff;">6</span>]
+            <span style="color: #ff7b72;">return</span> <span style="color: #d2a8ff;">answer</span>(<span style="color: #ffa657;">q</span>, <span style="color: #ffa657;">ranked</span>, <span style="color: #ffa657;" class="">tools</span>=[<span style="color: #a5d6ff;" class="">"browser"</span>, <span style="color: #a5d6ff;" class="">"code"</span>], <span style="color: #ffa657;">guardrails</span>=<span style="color: #ff7b72;">True</span>)</pre>
+        </div>
+
+        <!-- Timeline -->
+        <div class="bg-white/5 border-white/10 border rounded-2xl pt-4 pr-4 pb-4 pl-4">
+          <div class="flex items-center gap-2">
+            <svg data-lucide="timeline" class="w-4 h-4 text-white/80"></svg>
+            <h3 class="text-xl font-semibold tracking-tight">Idővonal</h3>
+          </div>
+          <ol class="mt-3">
+            <li class="relative pl-6 pb-4 border-l border-white/10">
+              <span class="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-white"></span>
+              <p class="text-xs text-white/60">2025</p>
+              <p class="text-sm font-medium tracking-tight">Független RPA és AI fejlesztő﻿</p>
+              <p class="text-xs text-white/60 mt-1">Vállalati és pénzügyi folyamatok automatizálása UiPath segítségével, AI‑alapú ügynökök fejlesztése dokumentum‑kivonatoláshoz, osztályozáshoz és munkafolyamat‑támogatáshoz szakmai csapatok számára.</p>
+            </li>
+            <li class="relative pl-6 pb-4 border-l border-white/10">
+              <span class="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-white/80"></span>
+              <p class="text-xs text-white/60">2024 — 2025</p>
+              <p class="text-sm font-medium tracking-tight">Automatizálási szakember﻿</p>
+              <p class="text-xs text-white/60 mt-1">Üzleti, pénzügyi és adminisztratív folyamatok automatizálása UiPath platformon, valamint automatizált adatfeldolgozás és üzleti riporting.</p>
+            </li>
+            
+            <li class="relative pl-6 border-l border-white/10">
+              <span class="absolute left-[-5px] top-1.5 w-2 h-2 rounded-full bg-white/60"></span>
+              <p class="text-xs text-white/60">2017 — 2021</p>
+              <p class="text-sm font-medium tracking-tight">Frontend fejlesztő</p>
+              <p class="text-xs text-white/60 mt-1">Webes platformok és reszponzív e‑kereskedelmi oldalak fejlesztése React/Node.js alapon, mobiloptimalizálásra és teljesítményre fókuszálva.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Evals -->
+    <section id="evals" class="max-w-7xl sm:px-6 sm:mt-20 border-t border-white/10 mt-16 mx-auto pt-10 px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-7">
+  <h2 class="text-2xl sm:text-3xl tracking-tight">Automatizálás és AI Értékelések</h2>
+  <p class="text-white/70 mt-2">Folyamatos értékelés az automatizált munkafolyamatokról, robotizált folyamatok hatékonyságáról és intelligens ügynökök teljesítményéről vállalati környezetben.</p>
+
+  <div class="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="line-chart" class="lucide lucide-line-chart w-4 h-4 text-white/80"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+        <h3 class="text-base font-semibold tracking-tight">Sikerráta folyamatonként (heti)</h3>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="w-2 h-2 rounded-full bg-green-400"></div>
+                <span class="text-xs text-white/60">Élő adatok</span>
+      </div>
+    </div>
+    
+    <div class="mt-3">
+      <div class="h-48">
+        <canvas id="evalChart" width="1342" height="384" style="display: block; box-sizing: border-box; height: 192px; width: 671px;" class=""></canvas>
+      </div>
+    </div>
+    
+    <div class="mt-4 grid grid-cols-3 gap-3 text-sm">
+      <div class="rounded-lg border border-white/10 bg-black/30 p-3">
+        <div class="text-white/60">Jelenlegi legjobb</div>
+        <div class="text-lg font-semibold tracking-tight">82%</div>
+        <div class="text-xs text-green-400 mt-1">+4% ezen a héten</div>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-black/30 p-3">
+        <div class="text-white/60">Kontextus nyerés</div>
+        <div class="text-lg font-semibold tracking-tight">+10% RAG</div>
+        <div class="text-xs text-white/50 mt-1">alapértékhez képest</div>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-black/30 p-3">
+        <div class="text-white/60">Késleltetés p95</div>
+        <div class="text-lg font-semibold tracking-tight">780ms</div>
+        <div class="text-xs text-yellow-400 mt-1">Az SLA-n belül</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+      <div class="flex items-center gap-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="target" class="lucide lucide-target w-4 h-4 text-white/70"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+        <h4 class="text-sm font-medium tracking-tight">Értékelési kategóriák</h4>
+      </div>
+      <div class="space-y-2">
+        <div class="flex justify-between items-center">
+          <span class="text-xs text-white/70">Automatizált munkafolyamat befejezése</span>
+          <span class="text-xs font-medium">87%</span>
+        </div>
+        <div class="flex justify-between items-center">
+          <span class="text-xs text-white/70">Adatkinyerés pontossága</span>
+          <span class="text-xs font-medium">82%</span>
+        </div>
+        <div class="flex justify-between items-center">
+          <span class="text-xs text-white/70">Ügynök-vezérelt döntéstámogatás</span>
+          <span class="text-xs font-medium">76%</span>
+        </div>
+        <div class="flex justify-between items-center">
+          <span class="text-xs text-white/70">Hibakezelés hatékonysága</span>
+          <span class="text-xs font-medium">73%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="rounded-xl border border-white/10 bg-white/5 p-4">
+      <div class="flex items-center gap-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="activity" class="lucide lucide-activity w-4 h-4 text-white/70"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+        <h4 class="text-sm font-medium tracking-tight">Legutóbbi tesztek</h4>
+      </div>
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs text-white/90">GPT-4o prompt optimalizálás</div>
+            <div class="text-[10px] text-white/60">2 órája</div>
+          </div>
+          <div class="w-2 h-2 rounded-full bg-green-400"></div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs text-white/90">Claude-3.5 eszközhívás</div>
+            <div class="text-[10px] text-white/60">6 órája</div>
+          </div>
+          <div class="w-2 h-2 rounded-full bg-blue-400"></div>
+        </div>
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs text-white/90">RAG darabméret A/B teszt</div>
+            <div class="text-[10px] text-white/60">12 órája</div>
+          </div>
+          <div class="w-2 h-2 rounded-full bg-yellow-400"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5 rounded-xl border border-white/10 bg-white/5 p-4">
+    <div class="flex items-center justify-between mb-3">
+      <div class="flex items-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="chart-candlestick" class="lucide lucide-chart-candlestick lucide-beaker w-[16px] h-[16px]" data-icon-replaced="true" style="width: 16px; height: 16px; color: rgb(255, 255, 255);"><path d="M9 5v4"></path><rect width="4" height="6" x="7" y="9" rx="1"></rect><path d="M9 15v2"></path><path d="M17 3v2"></path><rect width="4" height="8" x="15" y="5" rx="1"></rect><path d="M17 13v3"></path><path d="M3 3v16a2 2 0 0 0 2 2h16"></path></svg>
+        <h4 class="text-sm font-medium tracking-tight">Értékelési keretrendszer</h4>
+      </div>
+      <span class="text-xs text-white/60">1,247 összes teszt</span>
+    </div>
+    <p class="text-xs text-white/70 leading-relaxed">
+      Automatizált tesztelési folyamat folyamatnaplók, üzleti szabályérvényesítés és felhasználói visszajelzések alapján. Nyomon követi a munkafolyamat megbízhatóságát, adatkinyerés pontosságát, kivétel arányát és elégedettséget az RPA/MI telepítéseknél.
+    </p>
+  </div>
+</div>
+<!-- About -->
+        <div id="about" class="lg:col-span-5">
+          <div class="rounded-3xl overflow-hidden border border-white/10 bg-white/[0.03]">
+            <div class="relative aspect-[4/3]">
+              <img src="/src/img/about.jpg" alt="Munkaterület" class="absolute inset-0 w-full h-full object-cover">
+              <div class="absolute inset-0 bg-gradient-to-tr from-black/30 via-transparent to-transparent"></div>
+            </div>
+            <div class="p-5">
+              <h3 class="text-xl font-semibold tracking-tight">Rólam</h3>
+              <p class="mt-2 text-sm leading-relaxed text-white/70">
+                Tapasztalt vagyok a végponttól végpontig terjedő automatizálási megoldások szállításában: RPA tervezés és telepítés, folyamatanalízis, MI-alapú dokumentumfeldolgozás és intelligens ügynökök integrálása. Az üzleti folyamatok hatékonyságára, költségcsökkentésre és biztonságos automatizálásra fókuszálok, kiemelt figyelmet fordítva a felhasználói és fejlesztői élményre.
+              </p>
+              <div class="mt-4 grid grid-cols-3 gap-4">
+                <div>
+                  <div class="text-2xl tracking-tight">3+</div>
+                  <p class="text-[11px] text-white/60 mt-0.5">Év</p>
+                </div>
+                <div>
+                  <div class="text-2xl tracking-tight">120+</div>
+                  <p class="text-[11px] text-white/60 mt-0.5">Projekt</p>
+                </div>
+                <div class="">
+                  <div class="text-2xl tracking-tight">10M</div>
+                  <p class="text-[11px] text-white/60 mt-0.5">Token 3 év alatt</p>
+                </div>
+              </div>
+              <div class="mt-5 p-4 bg-black/30 rounded-xl border border-white/10">
+                <h4 class="text-sm font-medium tracking-tight text-white mb-2">Jelenleg tanulok</h4>
+                <p class="text-sm text-white/70">Strukturált kimenetek, memória architektúrák és alacsony késleltetésű eszközhasználat vLLM + GPU kötegelt feldolgozással.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+<section id="contact" class="max-w-7xl sm:px-6 sm:mt-20 border-t border-white/10 mt-16 mx-auto pt-10 px-4">
+  <div class="text-center">
+    <h2 class="text-2xl sm:text-3xl tracking-tight">Lépjünk kapcsolatba</h2>
+    <p class="text-white/70 mt-2 max-w-2xl mx-auto">
+      Van ötleted egy projektre, vagy szeretnél megbeszélni együttműködési lehetőséget?
+    </p>
+  </div>
+
+  <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
+    <!-- Contact Form -->
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 min-w-0">
+
+              <form method="POST" id="form" class="space-y-4">
+                <input type="hidden" name="access_key" value="15109b3c-ee1d-4d96-819f-f2d4bc00a86f">
+                <input type="hidden" name="subject" value="New Contact Form Submission">
+                <input type="hidden" name="from_name" value="Portfolio Contact Form">
+                <input type="hidden" name="reply_to" value="danihami44@gmail.com">
+                
+                <!-- Honeypot -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <div>
+                  <label for="name" class="block text-sm font-medium text-white/80 mb-2">Név</label>
+                  <input 
+                    type="text" 
+                    id="name"
+                    name="name"
+                    class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-white/20 transition-colors"
+                    required
+                    placeholder="Neved"
+                  />
+                </div>
+                
+                <div>
+                  <label for="email" class="block text-sm font-medium text-white/80 mb-2">E-mail cím</label>
+                  <input 
+                    type="email" 
+                    id="email"
+                    name="email"
+                    class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-white/20 transition-colors"
+                    required
+placeholder="email@pelda.hu"
+                  />
+                </div>
+                
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-white/80 mb-2">Telefonszám (opcionális)</label>
+                  <input 
+                    type="text" 
+                    id="phone"
+                    name="phone"
+                    class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-white/20 transition-colors"
+                    placeholder="Telefonszámod"
+                  />
+                </div>
+                
+                <div>
+                  <label for="message" class="block text-sm font-medium text-white/80 mb-2">Üzenet</label>
+                  <textarea 
+                    id="message"
+                    name="message" 
+                    rows="4"
+                    required
+                    class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/40 focus:outline-none focus:border-white/20 transition-colors resize-none"
+                    placeholder="Mesélj a projektedről..."
+                  ></textarea>
+                </div>
+                
+                <button
+                  type="submit"
+                  class="w-full inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-white/10 hover:bg-white/15 border border-white/10 rounded-xl transition-colors hover:bg-white/20"
+                >
+                  <span>Üzenet küldése</span>
+                </button>
+                
+                <!-- Result container will be populated by JavaScript -->
+                <div id="result" class="form-message"></div>
+              </form> 
+          </div>
+        <!-- Contact Info -->
+        <div class="space-y-6 min-w-0">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6">
+            <h3 class="text-lg font-semibold tracking-tight mb-3">Elérhetőségek</h3>
+            <div class="space-y-4">
+              <div>
+                <p class="text-sm text-white/60">E-mail</p>
+                <a href="mailto:danihami44@gmail.com" class="text-white/80 hover:text-white">danihami44@gmail.com</a>
+              </div>
+              <div>
+                <p class="text-sm text-white/60">Helyszín</p>
+                <p class="text-white/80">Budapest, Hungary</p>
+              </div>
+              <div>
+                <p class="text-sm text-white/60">Válaszidő</p>
+                <p class="text-white/80">24 órán belül</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-2xl mt-2 p-6">
+            <p class="text-sm text-white/70">
+              Elérhető vagyok szabadúszó munkákra és tanácsadási lehetőségekre. Beszéljük meg, hogyan segíthetek automatizálni folyamataidat és intelligens megoldásokat építeni.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="max-w-7xl sm:px-6 sm:mt-24 border-t border-white/10 mt-16 mx-auto mb-16 pt-10 px-4">
+      <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-neutral-950 text-white p-6 sm:p-8">
+        <div class="absolute inset-0 pointer-events-none">
+          <div class="absolute inset-0 bg-[radial-gradient(1200px_600px_at_20%_-20%,rgba(255,255,255,0.07),transparent_60%)]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(1200px_600px_at_80%_120%,rgba(255,255,255,0.06),transparent_60%)]"></div>
+          <div class="absolute inset-0 bg-[radial-gradient(#ffffff0d_1px,transparent_1px)] [background-size:20px_20px] opacity-[0.15]"></div>
+        </div>
+
+        <div class="relative">
+          <h2 class="text-[14vw] sm:text-[10vw] lg:text-[7vw] leading-[0.9] font-semibold tracking-tight">
+            Építsünk <span class="text-white/70">AI-val.</span>
+          </h2>
+
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 md:divide-x md:divide-white/10">
+            <div class="">
+              <p class="text-sm text-white/70">Email</p>
+              <a href="mailto:danihami44@gmail.com" class="mt-2 inline-flex items-center gap-3 text-xl sm:text-2xl font-medium tracking-tight">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" class="lucide lucide-mail w-5 h-5"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                <span class="break-all">danihami44@gmail.com</span>
+              </a>
+            </div>
+            <div class="md:pl-8">
+              <p class="text-sm text-white/70">Schedule</p>
+              <a href="#" class="inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium tracking-tight text-neutral-900 bg-white hover:bg-white/90 border border-white/10 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="calendar" class="lucide lucide-calendar w-4 h-4"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg>
+                <span>Book a call</span>
+              </a>
+            </div>
+            <div class="md:pl-8">
+              <p class="text-sm text-white/70">Social</p>
+              <div class="flex flex-wrap gap-3 mt-2">
+                <a href="https://x.com/daniel__hami" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white text-neutral-900 border border-white/10 hover:bg-white/90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="twitter" class="lucide lucide-twitter w-4 h-4"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                </a>
+                <a href="https://github.com/DanielHami" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white text-neutral-900 border border-white/10 hover:bg-white/90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="github" class="lucide lucide-github w-4 h-4"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                </a>
+                <a href="#" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white text-neutral-900 border border-white/10 hover:bg-white/90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="globe" class="lucide lucide-globe w-4 h-4"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/daniel-hami-b170381bb/" class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white text-neutral-900 border border-white/10 hover:bg-white/90">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-lucide="linkedin" class="lucide lucide-linkedin w-4 h-4"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-[11px] text-white/60 text-center mt-6">©  Daniel Hami — Szabadúszóként és szerződéses munkára is elérhető</p>
+        </div>
+      </div>
+    </section>
+
+  <script type="module" src="../src/scripts/main.js"></script>
+  <script type="module" src="../src/scripts/lang_button.js"></script>
