@@ -1,3 +1,4 @@
+// ...existing code...
 // DOM references
 const langSwitcher = document.getElementById('lang-switcher');
 const langTrigger = document.getElementById('lang-trigger');
@@ -12,30 +13,37 @@ const LANGS = [
 
 // Util functions
 function showDropdown() {
+  if (!langDropdown || !langTrigger) return;
   langDropdown.classList.remove('hidden');
   langTrigger.setAttribute('aria-expanded', 'true');
 }
 
 function hideDropdown() {
+  if (!langDropdown || !langTrigger) return;
   langDropdown.classList.add('hidden');
   langTrigger.setAttribute('aria-expanded', 'false');
 }
 
-function setLang(code) {
-  // Update the language in localStorage first
+// applyLang updates local state and DOM but does NOT navigate
+function applyLang(code) {
+  if (!code) return;
   localStorage.setItem('ui:lang', code);
-  
-  // Update the language label
+  document.documentElement.lang = code;
   const selectedLang = LANGS.find(lang => lang.code === code);
   if (selectedLang && langLabel) {
     langLabel.textContent = selectedLang.badge;
   }
-  
-  // Navigate to the new URL with hash
+}
+
+// setLang will apply and then navigate (used by user action)
+function setLang(code) {
+  applyLang(code);
+  // navigate only on explicit user selection
   window.location.href = `/${code}#`;
 }
 
 function renderList(selected) {
+  if (!langList) return;
   langList.innerHTML = '';
   LANGS.forEach(lang => {
     const btn = document.createElement('button');
@@ -55,8 +63,17 @@ function renderList(selected) {
 document.addEventListener('DOMContentLoaded', () => {
   if (window.lucide) window.lucide.createIcons();
 
+  // Safe guards: if required DOM elements are missing, do nothing
+  if (!langTrigger || !langList || !langSwitcher || !langLabel) {
+    // still render list if possible using saved value
+    const saved = localStorage.getItem('ui:lang') || 'en';
+    if (langList) renderList(saved);
+    return;
+  }
+
+  // Apply saved language without navigating (prevents refresh loop)
   const savedLang = localStorage.getItem('ui:lang') || 'en';
-  setLang(savedLang);
+  applyLang(savedLang);
   renderList(savedLang);
 
   langTrigger.addEventListener('click', () => {
@@ -64,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (expanded) {
       hideDropdown();
     } else {
-      renderList(document.documentElement.lang);
+      renderList(document.documentElement.lang || savedLang);
       showDropdown();
     }
     if (window.lucide) window.lucide.createIcons();
@@ -76,3 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+ // ...existing code...
