@@ -4,8 +4,6 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build:scripts": "esbuild src/scripts/*.ts --outdir=public/scripts --bundle --minify --sourcemap --platform=browser",
-    "watch:scripts": "esbuild src/scripts/*.ts --outdir=public/scripts --bundle --sourcemap --watch --platform=browser",
     "build": "npm run build:scripts && astro build",
     "preview": "astro preview",
     "astro": "astro"
